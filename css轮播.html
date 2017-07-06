@@ -1,0 +1,37 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style> 
+    #my_1{height: 100px;background: #0f6}
+    #my_2{height: 100px;background: #f60}
+    #arrow{ width:300px; height:200px; background:#f60;  animation:6s infinite linear arrowMove; -webkit-animation:6s infinite linear arrowMove;}
+    @keyframes arrowMove{
+      0%{  transform:translateY(0)}
+      40%{  transform:translateY(0);}
+      50%{transform: translateY(-100px);}
+      90%{  transform:translateY(-100px);}
+      100%{  transform:translateY(-200px);}
+    }
+    @-webkit-keyframes arrowMove{
+      0%{  transform:translateY(0)}
+      40%{  transform:translateY(0);}
+      50%{transform: translateY(-100px);}
+      90%{  transform:translateY(-100px);}
+      100%{  transform:translateY(-200px);}
+    }
+</style>
+</head>
+<body>
+  
+<div style="height:100px;overflow:hidden;width:200px;">
+	<div id="arrow">
+	  <div id="my_1">1</div>
+	  <div id="my_2">2</div>
+	  <div id="my_1">3</div>
+	</div>
+</div>
+</body>
+</html>
